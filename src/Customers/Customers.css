@@ -1,0 +1,118 @@
+.customers-container {
+    height: 20rem;
+    width: 19rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.customers-title {
+    width: 100%;
+}
+
+.customers-title h3 {
+    font-size: 1rem;
+}
+
+.customers-title h6 {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    color: #989898;
+    margin-top: 0.5rem;
+}
+
+.pie-chart {
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    background-color: var(--white);
+    box-shadow: 0 0 30px #c2e5ff83;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-container {
+    height: 11.5rem;
+    width: 11.5rem;
+    position: relative;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.percentage-customers {
+    transform: rotate(90deg);
+    width: 5.75rem;
+}
+
+.percentage-customers h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.percentage-customers p {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.inner-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.inner-circle {
+    fill: none;
+    stroke: #f1effc;
+    stroke-width: 15px;
+}
+
+.middle-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.middle-circle {
+    fill: none;
+    stroke: url(#GradientColorIn);
+    stroke-width: 25px;
+    stroke-dasharray: calc(2*3.1415*4rem);
+    stroke-dashoffset: calc(0.35*(2*3.1415*4rem));
+}
+
+.outer-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.outer-circle {
+    fill: none;
+    stroke: url(#GradientColorOut);
+    stroke-width: 35px;
+    stroke-dasharray: calc(2*3.1415*4rem);
+    stroke-dashoffset: calc(0.80*(2*3.1415*4rem));
+}
+
+@media screen and (max-width: 850px) and (orientation: portrait) {
+    .customers-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .customers-container {
+        width: 100%;
+    }
+}

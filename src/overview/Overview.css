@@ -1,0 +1,90 @@
+.overview-container {
+    height: 20rem;
+    max-width: calc(100% - 17rem);
+    background-color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.overview-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-title h3 {
+    font-size: 1rem;
+}
+
+.overview-title h6 {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    color: #989898;
+    margin-top: 0.5rem;
+}
+
+.months-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 0 0.5rem;
+    overflow-x: scroll;
+}
+
+.month-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.month-container label {
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.month-container label input {
+    display: none;
+}
+
+.month-container label div {
+    height: 100%;
+    width: 2.5rem;
+    background-color: #f2efff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.month-container label div:hover {
+    background-color: #f2dfff;
+}
+
+.month-container label input:checked~div {
+    background-color: #5a32ea;
+    box-shadow: 0 5px 20px #5a32ea82;
+}
+
+.month-container h5 {
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 850px) and (orientation: portrait) {
+
+    .overview-container {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .overview-container {
+        max-width: 100%;
+    }
+}
