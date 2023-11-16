@@ -40,14 +40,12 @@
     height: 11.5rem;
     width: 11.5rem;
     position: relative;
-    transform: rotate(-90deg);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .percentage-customers {
-    transform: rotate(90deg);
     width: 5.75rem;
 }
 
@@ -87,6 +85,8 @@
     stroke-width: 25px;
     stroke-dasharray: calc(2*3.1415*4rem);
     stroke-dashoffset: calc(0.35*(2*3.1415*4rem));
+    transform-origin: center;
+    transform: rotate(-90deg);
 }
 
 .outer-svg {
@@ -102,6 +102,8 @@
     stroke-width: 35px;
     stroke-dasharray: calc(2*3.1415*4rem);
     stroke-dashoffset: calc(0.80*(2*3.1415*4rem));
+    transform-origin: center;
+    transform: rotate(-90deg);
 }
 
 @media screen and (max-width: 850px) and (orientation: portrait) {

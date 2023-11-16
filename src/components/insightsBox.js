@@ -9,7 +9,7 @@ export default function InsightsBox({ img, title, value, profit, change, duratio
                 <h6>{title}</h6>
                 <p>${value}</p>
                 <div className='percentage'><span className={profit ? 'profit' : 'loss'}>
-                    {profit ? <BiUpArrowAlt className='arrow' /> : <BiDownArrowAlt className='arrow' />}{change}%</span>this {duration}</div>
+                    {profit ? <BiUpArrowAlt className='arrow' /> : <BiDownArrowAlt className='arrow' />}{change}%</span>&nbsp;this {duration}</div>
             </div>
         </div>
     )

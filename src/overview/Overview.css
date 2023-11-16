@@ -1,6 +1,7 @@
 .overview-container {
     height: 20rem;
-    max-width: calc(100% - 17rem);
+    width: fit-content;
+    min-width: 15rem;
     background-color: var(--white);
     padding: 1rem 1.5rem;
     border-radius: 10px;
@@ -32,6 +33,10 @@
     gap: 1rem;
     padding: 0 0.5rem;
     overflow-x: scroll;
+}
+
+.months-container::-webkit-scrollbar {
+    display: none;
 }
 
 .month-container {
@@ -78,13 +83,13 @@
 @media screen and (max-width: 850px) and (orientation: portrait) {
 
     .overview-container {
-        max-width: 100%;
+        width: 100%;
     }
 
 }
 
 @media screen and (max-width: 750px) {
     .overview-container {
-        max-width: 100%;
+        width: 100%;
     }
 }
