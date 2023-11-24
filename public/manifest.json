@@ -3,9 +3,9 @@
   "name": "Dashboard",
   "icons": [
     {
-      "src": "dashboard.png",
-      "type": "image/png",
-      "sizes": "168x168",
+      "src": "dashboard.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
       "purpose": "any"
     }
   ],
